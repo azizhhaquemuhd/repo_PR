@@ -1,0 +1,9 @@
+resource "aws_s3_bucket" "b" {
+  bucket = "aziz-my-tf-test-bucket-1"
+  acl    = "private"
+
+  tags = {
+    Name        = "aziz-bucket-created_by_terraform"
+    Environment = "Dev"
+  }
+}
